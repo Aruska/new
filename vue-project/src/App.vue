@@ -1,33 +1,43 @@
 <template>
   <div class="d-flex flex-column min-vh-100">
-    
-    <div class="container mt-4">
-      <!-- 분리한 헤더 컴포넌트 배치 -->
+    <div v-if="showTopBar" class="container mt-4">
       <Header />
 
-      <!-- 본문 영역 -->
       <main class="flex-grow-1">
         <router-view></router-view>
       </main>
     </div>
 
-    <!-- 분리한 푸터 컴포넌트 배치 -->
-    <Footer />
+    <template v-else>
+      <main class="flex-grow-1">
+        <router-view></router-view>
+      </main>
+    </template>
 
+    <Footer v-if="showTopBar" />
   </div>
 </template>
 
 <script>
-// 1. 컴포넌트 파일 가져오기
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
-  // 2. 현재 파일에서 사용할 컴포넌트 등록하기
   components: {
     Header,
     Footer
+  },
+  setup() {
+    const route = useRoute()
+
+    const showTopBar = computed(() => route.name !== 'login')
+
+    return {
+      showTopBar
+    }
   }
 }
 </script>
