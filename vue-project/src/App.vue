@@ -33,7 +33,7 @@ export default {
   setup() {
     const route = useRoute()
 
-    const showTopBar = computed(() => route.name !== 'login')
+    const showTopBar = computed(() => !['login', 'signup', 'change-password'].includes(route.name))
 
     return {
       showTopBar
