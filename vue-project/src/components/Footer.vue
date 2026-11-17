@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-md-start mb-2 mb-md-0">
-          <span class="fw-bold text-dark">My Web Project</span>
+          <span class="fw-bold text-dark">Kuasar</span>
           <p class="small mb-0 mt-1">{{ t('footerDescription') }}</p>
         </div>
         <div class="col-md-6 text-md-end">

@@ -1,20 +1,22 @@
 <template>
-  <div class="d-flex flex-column min-vh-100">
-    <div v-if="showTopBar" class="container mt-4">
+  <!-- 1. vh-100과 overflow-hidden으로 전체 창을 고정하여 스크롤 원천 차단 -->
+  <div class="d-flex flex-column vh-100 bg-white overflow-hidden">
+    
+    <!-- [헤더 영역] showTopBar가 true일 때만 상단 고정 (flex-shrink-0으로 찌그러짐 방지) -->
+    <header v-if="showTopBar" class="flex-shrink-0 w-100 bg-white">
       <Header />
+    </header>
 
-      <main class="flex-grow-1">
-        <router-view></router-view>
-      </main>
-    </div>
+    <!-- [메인 콘텐츠 영역] 남은 공간을 채우고, 내부 내용이 많을 때만 여기서 스크롤 처리 (overflow-auto) -->
+    <main class="flex-grow-1 overflow-auto bg-light bg-opacity-50">
+      <router-view></router-view>
+    </main>
 
-    <template v-else>
-      <main class="flex-grow-1">
-        <router-view></router-view>
-      </main>
-    </template>
+    <!-- [푸터 영역] showTopBar가 true일 때만 하단 고정 (flex-shrink-0으로 찌그러짐 방지) -->
+    <footer v-if="showTopBar" class="flex-shrink-0 w-100 bg-white">
+      <Footer />
+    </footer>
 
-    <Footer v-if="showTopBar" />
   </div>
 </template>
 

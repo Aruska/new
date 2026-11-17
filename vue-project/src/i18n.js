@@ -7,14 +7,14 @@ const state = reactive({
 const translations = {
   ko: {
     languageButton: 'English',
-    brand: '앙',
+    brand: 'Kuesar Company',
     leftButton1: '좌버튼1',
     leftButton2: '좌버튼2',
     leftButton3: '좌버튼3',
     rightButton1: '우버튼1',
     rightButton2: '우버튼2',
     rightButton3: '우버튼3',
-    footerDescription: 'Vue 3 + Bootstrap 5 + Spring Boot Fullstack Architecture',
+    footerDescription: 'Kuesar Company',
     address: '주소: 서울시 어딘가 | 연락처: 010-0000-0000',
     homeTitle: '환영합니다.',
     homeDescription: '로그인이 성공적으로 완료되었습니다.',
