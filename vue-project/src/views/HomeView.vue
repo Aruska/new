@@ -21,12 +21,12 @@
       
       <!-- 상단 버튼 (Social Media) -->
       <router-link to="/social" class="btn custom-rect-btn fw-bold position-absolute top-0 start-50 translate-middle-x text-white text-decoration-none">
-        Social Media
+        SOCIAL MEDIA
       </router-link>
 
       <!-- 좌측 버튼 (Tour) -->
       <router-link to="/tour" class="btn custom-rect-btn fw-bold position-absolute start-0 top-50 translate-middle-y text-white text-decoration-none">
-        Tour
+        TOUR
       </router-link>
 
       <!-- 중앙 버튼 (MUSIC) -->
@@ -35,13 +35,13 @@
       </router-link>
 
       <!-- 우측 버튼 (Videos) -->
-      <router-link to="/videos" class="btn custom-rect-btn fw-bold position-absolute end-0 top-50 translate-middle-y text-white text-decoration-none">
-        Videos
+      <router-link to="/video" class="btn custom-rect-btn fw-bold position-absolute end-0 top-50 translate-middle-y text-white text-decoration-none">
+        VIDEO
       </router-link>
 
       <!-- 하단 버튼 (Store) -->
       <router-link to="/store" class="btn custom-rect-btn fw-bold position-absolute bottom-0 start-50 translate-middle-x text-white text-decoration-none">
-        Store
+        STORE
       </router-link>
 
     </div>
