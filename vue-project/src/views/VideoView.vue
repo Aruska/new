@@ -62,39 +62,39 @@ import { ref } from 'vue'
 const videoList = ref([
   {
     id: 1,
-    title: '강남스타일 (GANGNAM STYLE) 뮤직비디오',
-    description: 'PSY - GANGNAM STYLE MV',
-    youtubeId: '9bZkp7q19f0'
+    title: 'Jhn Kepler - Hunnid Times (Official Music Video)',
+    description: 'Provided to YouTube by Universal Music Group ℗ 2024 Evelyn Publishers LLC',
+    youtubeId: 'CRZxBxi7WJg'
   },
   {
     id: 2,
-    title: 'THAT THAT (prod. & feat. SUGA of BTS)',
-    description: 'PSY - THAT THAT MV',
-    youtubeId: '8dJyioijVmQ'
+    title: "You Can't See",
+    description: 'Provided to YouTube by Virgin Music Group ℗ 2026 EMG Music Group LLC',
+    youtubeId: 'OEtjZin3PJ0'
   },
   {
     id: 3,
-    title: 'New Face 뮤직비디오',
-    description: 'PSY - New Face MV',
-    youtubeId: 'OwJPwXjwWhg'
+    title: 'Jhn Kepler - Hunnid Times (Official)',
+    description: 'Music video by Jhn Kepler performing Hunnid Times (Official).© 2025 Evelyn Pratcher',
+    youtubeId: 'SgCrZCRBBLc'
   },
   {
     id: 4,
-    title: 'DADDY (feat. CL of 2NE1)',
-    description: 'PSY - DADDY MV',
-    youtubeId: 'FrG4TEcSuRg'
+    title: 'Jhn Kepler - Hunnid Times (Official)',
+    description: 'Music video by Jhn Kepler performing Hunnid Times (Official).© 2025 Evelyn Pratcher',
+    youtubeId: 'SgCrZCRBBLc'
   },
   {
     id: 5,
-    title: '나팔바지 (NAPAL BAJI)',
-    description: 'PSY - NAPAL BAJI MV',
-    youtubeId: 'tF27Tnt_btU'
+     title: "You Can't See",
+    description: 'Provided to YouTube by Virgin Music Group ℗ 2026 EMG Music Group LLC',
+    youtubeId: 'OEtjZin3PJ0'
   },
   {
     id: 6,
-    title: 'HAPPEN (헤픈엔딩 cover / Live)',
-    description: 'PSY Live Performance',
-    youtubeId: 'X7_0bJSePqw'
+    title: 'Jhn Kepler - Hunnid Times (Official Music Video)',
+    description: 'Provided to YouTube by Universal Music Group ℗ 2024 Evelyn Publishers LLC',
+    youtubeId: 'CRZxBxi7WJg'
   }
 ])
 </script>

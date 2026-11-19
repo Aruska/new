@@ -5,8 +5,8 @@
       
       <!-- 상단 타이틀 (선택사항) -->
       <div class="text-center mb-5">
-        <h2 class="fw-bold text-dark">Album Store</h2>
-        <p class="text-muted">원하시는 앨범을 선택하고 결제를 진행하세요.</p>
+        <h2 class="fw-bold text-dark">ALBUM</h2>
+        <!-- <p class="text-muted">원하시는 앨범을 선택하고 결제를 진행하세요.</p> -->
       </div>
 
       <!-- 3열 그리드 시스템 (3X3, 3X4, 3X6 등 데이터가 늘어나도 아래로 자연스럽게 확장) -->
@@ -22,9 +22,9 @@
                 :alt="album.title" 
                 class="w-100 h-100 object-fit-cover album-img-zoom"
               />
-              <span class="position-absolute top-0 start-0 m-3 badge bg-dark bg-opacity-75 rounded-pill px-3 py-2">
+              <!-- <span class="position-absolute top-0 start-0 m-3 badge bg-dark bg-opacity-75 rounded-pill px-3 py-2">
                 {{ album.price }}
-              </span>
+              </span> -->
             </div>
 
             <!-- 3번: 결제 버튼 영역 (클릭 시 결제 페이지로 이동) -->
@@ -67,39 +67,39 @@ import { ref } from 'vue'
 const albumList = ref([
   {
     id: 1,
-    title: '앨범 1',
+    title: 'HUNNID TIMES',
     price: '₩20,000',
-    image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80'
+    image: '/src/components/imgs/JhnUm.png'
   },
   {
     id: 2,
-    title: '앨범 2',
+    title: 'HUNNID TIMES (Official Music Video)',
     price: '₩25,000',
-    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80'
+    image: '/src/components/imgs/HuTime.png'
   },
   {
     id: 3,
-    title: '앨범 3',
+    title: "You Can't See",
     price: '₩18,000',
-    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80'
+    image: '/src/components/imgs/realUm.png'
   },
   {
     id: 4,
-    title: '앨범 4',
+    title: 'HUNNID TIMES (Official Music Video)',
     price: '₩30,000',
-    image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80'
+    image: '/src/components/imgs/HuTime.png'
   },
   {
     id: 5,
-    title: '앨범 5',
+    title: 'HUNNID TIMES (Official Music Video) Ver.2',
     price: '₩22,000',
-    image: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=600&q=80'
+    image: '/src/components/imgs/JhnUm.png'
   },
   {
     id: 6,
-    title: '앨범 6',
+    title: 'Hi Insta ',
     price: '₩27,000',
-    image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=600&q=80'
+    image: '/src/components/icons/IconInsta.png'
   },
   
   /* 

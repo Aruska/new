@@ -32,9 +32,9 @@
             <!-- 3번: 설명 박스 영역 -->
             <div class="description-box rounded-3 p-3 p-md-4 text-white w-100" style="max-width: 420px; z-index: 5;">
               <p class="m-0 fw-medium">
-                앙기모띠
+                For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.
                 <br class="d-none d-sm-inline" />
-                앙기모띠앙기모띠앙기모띠앙기모띠앙기모띠
+                John 3:16
               </p>
             </div>
 
@@ -73,9 +73,9 @@
             <!-- 6번: 설명 박스 영역 -->
             <div class="description-box rounded-3 p-3 p-md-4 text-white w-100" style="max-width: 420px; z-index: 5;">
               <p class="m-0 fw-medium">
-                앙기모띠앙기모띠앙기모띠앙기모띠앙기모띠
+                Behold, I will do a new thing; now it shall spring forth; shall ye not know it? I will even make a way in the wilderness, and rivers in the desert.
                 <br class="d-none d-sm-inline" />
-                앙기모띠앙기모띠앙기모띠앙기모띠앙기모띠앙기모띠
+                Isaiah 43:19
               </p>
             </div>
 

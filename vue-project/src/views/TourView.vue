@@ -79,7 +79,7 @@ const tourList = ref([
 
 // Buy Now 클릭 시 실행될 함수
 const handleBuyTicket = (tour) => {
-  alert(`${tour.city} 투어 티켓 예매 페이지로 이동합니다.`)
+  alert(`${tour.city} Buy Now.`)
 }
 </script>
 

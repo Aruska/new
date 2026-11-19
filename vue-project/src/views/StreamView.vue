@@ -54,45 +54,46 @@ import { ref } from 'vue'
 const platformList = ref([
   {
     id: 1,
-    name: 'Spotify',
-    artistName: '',
-    artistUrl: 'https://open.spotify.com/',
-    icon: 'https://images.unsplash.com/photo-1614680376593-902f749f7ffc?auto=format&fit=crop&w=300&q=80' // 예시 아이콘 이미지 (실제 로고 이미지로 교체 가능)
+    name       : 'Spotify',
+    artistName : '',
+    artistUrl  : 'https://open.spotify.com/artist/4d3bwQIq6hO0xaSduNVx4p?si=Zxvw0JrjQXmQTWrCKUeylA',
+    icon       : '/src/components/icons/IconSpotify.png'
   },
   {
     id: 2,
     name: 'YouTube Music',
     artistName: '',
-    artistUrl: 'https://music.youtube.com/', 
-    icon: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=300&q=80'
+    // artistUrl: 'https://music.youtube.com/@jhnkepler', 
+    artistUrl: 'https://www.youtube.com/@jhnkepler', 
+    icon: '/src/components/icons/IconYTMusic.png'
   },
   {
     id: 3,
     name: 'Apple Music',
     artistName: '',
-    artistUrl: 'https://music.apple.com/', 
-    icon: 'https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=300&q=80'
+    artistUrl: 'https://music.apple.com/us/artist/jhn-kepler/1602023577', 
+    icon: '/src/components/icons/IconAppleMusic.png'
   },
   {
     id: 4,
     name: 'Amazon Music',
     artistName: '',
-    artistUrl: 'https://music.amazon.com/', 
-    icon: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=300&q=80'
+    artistUrl: 'https://music.amazon.com/artists/B09V7RJVCX/jhn-kepler?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_NRsO98m1vXQ5VXailcmFBh6B5', 
+    icon: '/src/components/icons/IconAmazonMusic.png'
   },
   {
     id: 5,
     name: 'TIDAL',
     artistName: '',
-    artistUrl: 'https://listen.tidal.com/',
-    icon: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=300&q=80'
+    artistUrl: 'https://tidal.com/artist/31100112/',
+    icon: '/src/components/icons/IconTIDAL.png'
   },
   {
     id: 6,
     name: 'SoundCloud',
     artistName: '',
-    artistUrl: 'https://soundcloud.com/',
-    icon: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=300&q=80'
+    artistUrl: 'https://soundcloud.com/keplersfourthlaw',
+    icon: '/src/components/icons/IconSoundCloud.png'
   }
   /* 
     추가 플랫폼(예: 3x4, 3x6 등)이 필요할 경우 아래에 객체를 계속 추가하시면 
