@@ -51,9 +51,10 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useYoutubeBg } from '/src/components/composables/YtubeBg'
 
 const videoId = ref('CRZxBxi7WJg')
-const isPlaying = ref(false)
+const { isPlaying, setPlayer, clearPlayer } = useYoutubeBg()
 let player = null
 
 const initPlayer = () => {
@@ -73,15 +74,17 @@ const initPlayer = () => {
     },
     events: {
       onReady: (event) => {
+        setPlayer(event.target)
         event.target.mute()
         event.target.playVideo()
       },
       onStateChange: (event) => {
+        // 1: 재생 중(PLAYING), 2: 일시정지(PAUSED), 0: 종료(ENDED)
         if (event.data === 1) {
           isPlaying.value = true
         } else if (event.data === 0) {
           event.target.playVideo()
-        } else {
+        } else if (event.data === 2) {
           isPlaying.value = false
         }
       }
@@ -105,6 +108,7 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
+  clearPlayer()
   if (player && player.destroy) {
     player.destroy()
   }
@@ -145,23 +149,21 @@ onUnmounted(() => {
 
 /* ⭐ [핵심 반응형 직사각형 스타일] */
 .custom-rect-btn {
-  /* 화면 너비(vw)에 연동되되, 너무 작거나 커지지 않도록 min/max 제한을 걸어 반응형 구현 */
-  width: clamp(130px, 18vw, 160px) !important;   /* 가로가 긴 직사각형 너비 */
-  height: clamp(50px, 7vw, 65px) !important;      /* 세로 높이 */
-  border-radius: 12px !important;                 /* 약간 둥근 모서리 */
-  background-color: transparent !important;       /* 평상시 투명 */
-  border: 2px solid transparent !important;       /* 평상시 테두리 투명 */
+  width: clamp(130px, 18vw, 160px) !important;
+  height: clamp(50px, 7vw, 65px) !important;
+  border-radius: 12px !important;
+  background-color: transparent !important;
+  border: 2px solid transparent !important;
   color: #ffffff !important;
   display: flex !important;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: clamp(0.8rem, 1.2vw, 1rem);          /* 글자 크기도 화면에 맞춰 반응형으로 조절 */
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
   transition: all 0.3s ease-in-out !important;
-  white-space: nowrap;                            /* 글자가 줄바꿈되지 않게 방지 */
+  white-space: nowrap;
 }
 
-/* 마우스를 올렸을 때(Hover) 효과 */
 .custom-rect-btn:hover {
   background-color: rgba(255, 255, 255, 0.2) !important;
   border-color: #ffffff !important;

@@ -100,7 +100,7 @@
 <script setup>
 import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { useLanguage } from '../i18n'
+import { useLanguage } from '../locales/i18n'
 
 const router = useRouter()
 const { t } = useLanguage()
