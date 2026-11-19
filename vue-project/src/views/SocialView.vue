@@ -173,8 +173,8 @@
 <script setup>
 import { ref }     from 'vue'
 import iconInsta   from '@/components/icons/IconInsta.png'
-import iconYoutube from '@/components/icons/IconYtube.png'
-import iconTiktok  from '@/components/icons/IconTktok.png'
+import iconYoutube from '@/components/icons/IconYTube.png'
+import iconTiktok  from '@/components/icons/IconTkTok.png'
 import iconYTShots from '@/components/icons/IconYTShots.png'
 
 const instagramPosts = ref([
